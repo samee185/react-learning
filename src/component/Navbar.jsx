@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navbar = ({cart}) => {
     return ( 
         <>
         <div className="navBar">
@@ -10,6 +10,7 @@ const Navbar = () => {
                     <li>contact</li>
                 </ul>
             </div>
+            <div className="navCart"><h2>{cart}</h2> CART</div>
         </div>
         </>
      );

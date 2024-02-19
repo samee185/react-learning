@@ -34,8 +34,8 @@ const Home = () => {
     <>
 
     <div className="home">
-        <Navbar />      
-        <h1 style={{float:"right"}}>{cart.length}</h1>
+        <Navbar cart={cart.length}/>      
+        {/* <h1 style={{float:"right"}}>{cart.length}</h1> */}
         <ProductList products ={products} title = "My Pricelist" addToCart={addToCart}/>
         <ProductList products ={products.filter((product)=> product.category === "menShoes")} title ="Men's Collection" addToCart={addToCart} />
     </div>
