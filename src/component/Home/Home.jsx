@@ -41,7 +41,7 @@ const Home = () => {
     </div>
     
     <div className="cart">
-      <h1 style={git a{textAlign:"center"}}>CART</h1>
+      <h1 style={{textAlign:"center"}}>CART</h1>
       <div className="product-container">
         {cart.map((product) => (
           <div className="product-preview" key={product.id}>
