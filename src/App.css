@@ -1,0 +1,32 @@
+.navBar{
+    max-width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    font-size:28px;
+    color: green;
+}
+.navLinks ul{
+    display: flex;
+    gap:4rem;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.product-container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:16px;
+}
+
+.product-preview{
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-bottom: 1px solid #fafafa;
+}
+.product-preview:hover{
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
