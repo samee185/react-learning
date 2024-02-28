@@ -1,14 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* text-decoration:none; */
+}
 .navBar{
-    max-width:100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding:10px 30px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(151, 187, 23);
+    position: fixed;
+    width:100%;
+    z-index:1000;
 }
-.logo{
+.logo a{
     font-size:28px;
     color: green;
+    text-decoration:none;
+}
+.navLinks{
+    display: flex;
+    align-items:center;
 }
 .navLinks ul{
     display: flex;
@@ -24,7 +37,7 @@
 
 .product-preview{
     padding: 10px 16px;
-    margin: 20px 0;
+    margin-top: 10rem;
     border-bottom: 1px solid #fafafa;
 }
 .product-preview:hover{

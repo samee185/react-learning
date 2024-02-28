@@ -11,6 +11,7 @@ const ProductList = ({products, title, addToCart}) => {
             <h3>{product.size}</h3>
             <h4>{product.price}</h4>
             <button onClick={() => addToCart(product)}>add to cart</button>
+            <Link to={"/products/:id"}>Info</Link>
             </div>
         ))};
         </div>

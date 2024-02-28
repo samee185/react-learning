@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import ProductList from './ProductList';
-import Navbar from '../Navbar';
 import { Outlet } from 'react-router-dom';
 
 
@@ -34,9 +33,8 @@ const Home = () => {
     <>
 
     <div className="home">
-        <Navbar cart={cart.length}/>      
         {/* <h1 style={{float:"right"}}>{cart.length}</h1> */}
-        <ProductList products ={products} title = "My Pricelist" addToCart={addToCart}/>
+        <ProductList products ={products} addToCart={addToCart}/>
         <ProductList products ={products.filter((product)=> product.category === "menShoes")} title ="Men's Collection" addToCart={addToCart} />
     </div>
     
